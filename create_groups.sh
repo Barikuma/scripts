@@ -13,7 +13,7 @@ done
 
 for group in ${groups[@]}; do
 	if getent group $group > /dev/null 2>&1; then
-		echo "A gorup with name $group already exists and cannot be created"
+		echo "A group with name $group already exists and cannot be created"
 	else
 		sudo groupadd $group
 		echo "Group $group has been created"
